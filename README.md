@@ -63,7 +63,7 @@ Hold keys/clicks to add/remove faster.
 
 ## License
 
-Open-source for personal and educational use. No warranty provided.
+This project is open-source and available under the MIT License.
 
 ## Author
 
