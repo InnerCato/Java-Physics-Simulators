@@ -11,12 +11,12 @@ The projects showcase basic physics simulations.
 - Balls move and collide in zero gravity.
 - Collisions occur between balls and with walls.
 - No gravity effects.
-- Folder: `BouncingBalls/`
+- Folder: `ZeroGCollision/`
 
 ### 2. Gravity Collision Simulation
 - Balls fall under gravity and collide with each other and the ground.
 - Incorporates basic gravity and bouncing mechanics.
-- Folder: `PhysicsBalls/`
+- Folder: `GravityAndCollision/`
 
 ---
 
