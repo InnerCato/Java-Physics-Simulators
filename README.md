@@ -55,26 +55,26 @@ java GravityAndCollision.java
 
 ### Controls
 
-    Add balls with + (numpad or keyboard) or left click.
+Add balls with + (numpad or keyboard) or left click.
 
-    Remove balls with - (numpad or keyboard) or right click.
+Remove balls with - (numpad or keyboard) or right click.
 
-    Hold keys/clicks to add/remove multiple balls.
+Hold keys/clicks to add/remove multiple balls.
 
 ---
 
 ## Notes
 
-    Old and scuffed projects; contains quirks and visual glitches.
+Old and scuffed projects; contains quirks and visual glitches.
 
-    Kept for learning/archival purposes.
+Kept for learning/archival purposes.
 
-    Feel free to explore, modify, or use as a starting point for more polished simulations.
+Feel free to explore, modify, or use as a starting point for more polished simulations.
 
 ## License
 
-    Open-source for personal and educational use. No warranty provided.
+Open-source for personal and educational use. No warranty provided.
 
 ## Author
 
-    Developed by InnerCato
+Developed by InnerCato
