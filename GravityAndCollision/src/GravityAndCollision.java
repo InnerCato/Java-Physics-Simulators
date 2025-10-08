@@ -79,7 +79,7 @@ public class GravityAndCollision extends JPanel implements ActionListener, KeyLi
         String numCollisions = "number of collisions between balls: " + String.valueOf(world.numCollisions());
 
         // Draw the number of balls at position (100, 115)
-        graphics.drawString(numCollisions, 100, 115);
+        //graphics.drawString(numCollisions, 100, 115);
     }
 
     // events:
