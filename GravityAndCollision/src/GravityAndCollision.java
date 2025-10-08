@@ -65,7 +65,7 @@ public class GravityAndCollision extends JPanel implements ActionListener, KeyLi
 
         graphics.drawString("Add balls with '+'; remove with '-' (numpad is supported)", 100, 55);
         graphics.drawString("Add balls with left click; remove with right click", 100, 70);
-        graphics.drawString("Hold buttons to add/remove precisely", 100, 85);
+        graphics.drawString("Hold buttons to add/remove faster", 100, 85);
 
         graphics.setColor(Color.black);
 

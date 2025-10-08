@@ -20,11 +20,22 @@ public class Ball{
         ballX += xVel;
         ballY += yVel;
         // Check for collision with walls
-        if (ballX <= 0 || ballX + diameter >= ZeroGCollision.screenWidth) {
-            xVel *= -1; // Reverse horizontal velocity
+        // Horizontal walls
+        if (ballX <= 0) {
+           ballX = 0;
+            xVel *= -1;
+        } else if (ballX + diameter >= ZeroGCollision.screenWidth) {
+            ballX = ZeroGCollision.screenWidth - diameter;
+            xVel *= -1;
         }
-        if (ballY <= 0 || ballY + diameter >= ZeroGCollision.screenHeight) {
-            yVel *= -1; // Reverse vertical velocity
+
+        // Vertical walls
+        if (ballY <= 0) {
+            ballY = 0;
+            yVel *= -1;
+        } else if (ballY + diameter >= ZeroGCollision.screenHeight) {
+            ballY = ZeroGCollision.screenHeight - diameter;
+            yVel *= -1;
         }
     }
 
@@ -70,6 +81,16 @@ public class Ball{
     {
         yVel = yV;
     }
+    
+    void setX(float xL)
+    {
+        ballX = xL;
+    }
+
+    void setY(float yL)
+    {
+        ballY = yL;
+    }
 
 
     boolean collide(Ball otherBall) 
@@ -92,7 +113,24 @@ public class Ball{
         // Check if the balls are colliding
         if (distance <= diameter) {
             // Calculate new velocities using elastic collision formulas
+            // Calculate overlap
+            float overlap = diameter - (float) distance;
+    
+            // Move balls away from each other proportionally
+            float dx = otherBall.getX() - ballX;
+            float dy = otherBall.getY() - ballY;
+            float distanceFactor = (float) Math.sqrt(dx*dx + dy*dy);
 
+            if (distanceFactor == 0) distanceFactor = 0.1f; // prevent divide by zero
+
+            float moveX = dx / distanceFactor * overlap / 2;
+            float moveY = dy / distanceFactor * overlap / 2;
+
+            // Apply separation
+            ballX -= moveX;
+            ballY -= moveY;
+            otherBall.setX(otherBall.getX() + moveX);
+            otherBall.setY(otherBall.getY() + moveY);
             // Velocity components for the current ball after collision
             xVel = (myXVel * (myMass - otherMass) + 2 * otherMass * otherXVel) / (myMass + otherMass);
             yVel = (myYVel * (myMass - otherMass) + 2 * otherMass * otherYVel) / (myMass + otherMass);

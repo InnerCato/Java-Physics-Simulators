@@ -1,9 +1,7 @@
 # Java Physics Simulator
 
-This repository contains Java-based physics simulation projects. They are kept for archival purposes, so expect them to be a little rough around the edges and scuffed. The projects showcase basic physics simulations.
-
-The projects right now are pretty broken and the balls can sometimes get stuck on each other, but they function in regards to the project scope.
-Im keeping it for archival purposes
+This repository contains Java-based physics simulation projects. They are kept for archival purposes, so expect some mild visual glitches. 
+The projects showcase basic physics simulations.
 
 ---
 
@@ -59,13 +57,13 @@ Add balls with + (numpad or keyboard) or left click.
 
 Remove balls with - (numpad or keyboard) or right click.
 
-Hold keys/clicks to add/remove multiple balls.
+Hold keys/clicks to add/remove faster.
 
 ---
 
 ## Notes
 
-Old and scuffed projects; contains quirks and visual glitches.
+Old and scuffed projects; contains minor visual glitches.
 
 Kept for learning/archival purposes.
 

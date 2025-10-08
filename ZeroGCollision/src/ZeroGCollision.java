@@ -5,7 +5,7 @@ import java.awt.event.*; //for detecting events such as keys being pressed or mo
 public class ZeroGCollision extends JPanel implements ActionListener, KeyListener, MouseListener, MouseMotionListener {
     public boolean adding = false;
     public boolean removing = false;
-    public int brushRadius = 60;
+    public int brushRadius = 30;
 
     public static int screenWidth = 1280;
     public static int screenHeight = 720;
@@ -65,7 +65,7 @@ public class ZeroGCollision extends JPanel implements ActionListener, KeyListene
 
         graphics.drawString("Add balls with '+'; remove with '-' (numpad is supported)", 100, 55);
         graphics.drawString("Add balls with left click; remove with right click", 100, 70);
-        graphics.drawString("Hold buttons to add/remove precisely", 100, 85);
+        graphics.drawString("Hold buttons to add/remove faster", 100, 85);
 
         graphics.setColor(Color.black);
 
