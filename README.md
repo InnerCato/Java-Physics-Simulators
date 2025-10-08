@@ -1,6 +1,6 @@
 # Java Physics Simulator
 
-This repository contains Java-based physics simulation projects. They are kept for archival purposes, so expect some mild visual glitches. 
+This repository contains Java-based physics simulation projects. They are kept for archival purposes and are old projects of mine, so expect some mild visual glitches. 
 The projects showcase basic physics simulations.
 
 ---
@@ -33,11 +33,11 @@ The projects showcase basic physics simulations.
 ## Usage
 
 ### Requirements
-- Java 8 or later
-- No additional libraries required (uses built-in Java Swing & AWT).
+- Java
+- Built-in Java Swing & AWT
 
 ### Running the Simulation
-1. Open the project folder (`BouncingBalls/` or `PhysicsBalls/`) in your IDE or terminal.
+1. Open the project folder (`ZeroGCollision/` or `GravityAndCollision/`) in your IDE or terminal.
 
 2. Run the main class:
 
@@ -60,14 +60,6 @@ Remove balls with - (numpad or keyboard) or right click.
 Hold keys/clicks to add/remove faster.
 
 ---
-
-## Notes
-
-Old and scuffed projects; contains minor visual glitches.
-
-Kept for learning/archival purposes.
-
-Feel free to explore, modify, or use as a starting point for more polished simulations.
 
 ## License
 
